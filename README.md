@@ -11,16 +11,16 @@ $ grep bolt.htb htb_etc_hosts/hosts_all.txt
 10.10.11.114    bolt.htb             # https://app.hackthebox.com/machines/384
 ```
 
-Clone this repo and start the DNS server on port 1053:
+Clone this repo and start the DNS server on port 53 bound to 127.0.0.1:
 ```
 $ git clone https://github.com/fx2301/htb_wildcard_dns.git
 $ cd htb_wildcard_dns
 $ go run .
-Listening at:  :1053
+Listening at:  127.0.0.1:53
 ```
 
 ```
-$ dig bolt.htb @localhost -p 1053 | grep -A 1 SECTION
+$ dig bolt.htb @localhost | grep -A 1 SECTION
 ;; QUESTION SECTION:
 ;bolt.htb.                      IN      A
 --

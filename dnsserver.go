@@ -263,7 +263,7 @@ func handleDNSClient(requestBytes []byte, serverConn *net.UDPConn, clientAddr *n
 }
 
 func main() {
-	serverAddr, err := net.ResolveUDPAddr("udp", ":1053")
+	serverAddr, err := net.ResolveUDPAddr("udp", "127.0.0.1:53")
 
 	if err != nil {
 		fmt.Println("Error resolving UDP address: ", err.Error())
