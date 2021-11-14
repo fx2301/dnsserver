@@ -1,3 +1,9 @@
+# UPDATE!
+
+Don't use this. Use `dnsmasq` configuration from [htb_etc_hosts](https://github.com/fx2301/htb_etc_hosts) instead.
+
+---
+
 # What
 
 Wildcard dns resolution for htb machines. Relies on [htb_etc_hosts](https://github.com/fx2301/htb_etc_hosts) being in a sibling directory.
